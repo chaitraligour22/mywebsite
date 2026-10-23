@@ -1,0 +1,128 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f0eb;
+        }
+
+        .header {
+            background-color: rosybrown;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .navbar {
+            background-color: brown;
+            padding: 18px;
+            text-align: center;
+        }
+
+        .nav-item {
+            display: inline-block;
+            margin: 0 18px;
+        }
+
+        .nav-item a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .nav-item a:hover {
+            color: yellow;
+        }
+
+        .home {
+            background-color: #ead5d5;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .home h2 {
+            color: brown;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .home p {
+            color: #663333;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: brown;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: rosybrown;
+        }
+
+        .footer {
+            background-color: brown;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .nav-item {
+                margin: 8px;
+            }
+
+            .home h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>My Website</h1>
+        <p>Welcome to Our Website</p>
+    </div>
+
+    <div class="navbar">
+        <div class="nav-item"><a href="home.html">Home</a></div>
+        <div class="nav-item"><a href="about.html">About</a></div>
+        <div class="nav-item"><a href="service.html">Services</a></div>
+        <div class="nav-item"><a href="gallery.html">Gallery</a></div>
+        <div class="nav-item"><a href="contact.html">Contact</a></div>
+    </div>
+
+    <div class="home">
+        <h2>Welcome to My Website</h2>
+
+        <p>Learn, Explore and Create Something Amazing!</p>
+
+        <a href="home.html" class="button">Visit Home Page</a>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 My Website | All Rights Reserved</p>
+    </div>
+
+</body>
+</html>

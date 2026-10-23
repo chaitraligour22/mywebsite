@@ -1,0 +1,85 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - My Website</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f5f0eb; }
+        .header { background: rosybrown; color: white; text-align: center; padding: 25px; }
+        .navbar { background: brown; padding: 18px; text-align: center; }
+        .nav-item { display: inline-block; margin: 0 18px; }
+        .nav-item a { color: white; text-decoration: none; font-size: 18px; }
+        .nav-item a:hover, .nav-item a.active { color: yellow; }
+        .hero { background: #ead5d5; text-align: center; padding: 55px 20px; }
+        .hero h2 { color: brown; font-size: 36px; margin-bottom: 12px; }
+        .content { max-width: 1100px; margin: auto; padding: 35px 20px; }
+        .content h2 { color: brown; text-align: center; margin-bottom: 20px; }
+        .content > p { text-align: center; margin-bottom: 25px; }
+        .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .gallery-item { background: white; border-radius: 10px; overflow: hidden; text-align: center; box-shadow: 0 3px 10px #ddd; }
+        .gallery-item img { width: 100%; height: 200px; object-fit: cover; display: block; }
+        .gallery-item h3 { padding: 15px; color: brown; }
+        .footer { background: brown; color: white; text-align: center; padding: 20px; margin-top: 20px; }
+        @media (max-width: 700px) { .gallery { grid-template-columns: 1fr; } .nav-item { margin: 6px 10px; } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>A Look at Our Work</p>
+    </div>
+
+    <div class="navbar">
+        <div class="nav-item"><a href="home.html">Home</a></div>
+        <div class="nav-item"><a href="about.html">About</a></div>
+        <div class="nav-item"><a href="service.html">Services</a></div>
+        <div class="nav-item"><a class="active" href="gallery.html">Gallery</a></div>
+        <div class="nav-item"><a href="contact.html">Contact</a></div>
+    </div>
+
+    <div class="hero">
+        <h2>Our Gallery</h2>
+        <p>Explore our creative ideas and projects.</p>
+    </div>
+
+    <div class="content">
+        <h2>Our Creative Work</h2>
+        <p>Replace these image filenames with your own pictures.</p>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/img.jpg" alt="Project one">
+                <h3>Project One</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="images/img1.png" alt="Creative design">
+                <h3>Creative Design</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="images/img2.jpg" alt="Our team">
+                <h3>Our Team</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="images/img3.jpg" alt="Website layout">
+                <h3>Website Layout</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="images/img4.jpg" alt="Our goals">
+                <h3>Our Goals</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="images/img5.jpg" alt="Recent work">
+                <h3>Recent Work</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 My Website | All Rights Reserved</p>
+    </div>
+</body>
+</html>
+```

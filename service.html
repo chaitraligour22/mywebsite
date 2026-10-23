@@ -1,0 +1,95 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - My Website</title>
+    <style>
+        *{ 
+            margin: 0; padding: 0; box-sizing: border-box; 
+        }
+
+        body { 
+            font-family: Arial, sans-serif; background: #f5f0eb; color: #442727; 
+        }
+        
+        .header { 
+            background: rosybrown; color: white; text-align: center; padding: 25px;
+        }
+        .navbar { background: brown; padding: 18px; text-align: center; }
+        .nav-item { display: inline-block; margin: 0 18px; }
+        .nav-item a { color: white; text-decoration: none; font-size: 18px; }
+        .nav-item a:hover, .nav-item a.active { color: yellow; }
+        .hero { background: #ead5d5; text-align: center; padding: 55px 20px; }
+        .hero h2 { color: brown; font-size: 36px; margin-bottom: 12px; }
+        .content { max-width: 1100px; margin: auto; padding: 35px 20px; }
+        .content h2 { color: brown; text-align: center; margin-bottom: 25px; }
+        .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .card { background: white; padding: 30px 20px; border-radius: 10px; text-align: center; box-shadow: 0 3px 10px #ddd; }
+        .card h3 { color: brown; margin-bottom: 12px; }
+        .button { display: inline-block; background: brown; color: white; padding: 10px 18px; border-radius: 5px; text-decoration: none; margin-top: 20px; }
+        .footer { background: brown; color: white; text-align: center; padding: 20px; }
+        @media (max-width: 700px) { .cards { grid-template-columns: 1fr; } .nav-item { margin: 6px 10px; } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>What We Can Do for You</p>
+    </div>
+
+    <div class="navbar">
+        <div class="nav-item"><a href="home.html">Home</a></div>
+        <div class="nav-item"><a href="about.html">About</a></div>
+        <div class="nav-item"><a class="active" href="service.html">Services</a></div>
+        <div class="nav-item"><a href="gallery.html">Gallery</a></div>
+        <div class="nav-item"><a href="contact.html">Contact</a></div>
+    </div>
+
+    <div class="hero">
+        <h2>Our Services</h2>
+        <p>Simple solutions for creative ideas.</p>
+    </div>
+
+    <div class="content">
+        <h2>Services We Offer</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Attractive layouts, colors and typography for websites.</p>
+            </div>
+            <div class="card">
+                <h3>Responsive Websites</h3>
+                <p>Layouts that adjust to desktops, tablets and mobile screens.</p>
+            </div>
+            <div class="card">
+                <h3>HTML &amp; CSS</h3>
+                <p>Well-structured web pages styled using HTML and CSS.</p>
+            </div>
+            <div class="card">
+                <h3>Gallery Design</h3>
+                <p>Display pictures and creative projects in a neat grid.</p>
+            </div>
+            <div class="card">
+                <h3>Website Updates</h3>
+                <p>Improve existing website colors, spacing and layouts.</p>
+            </div>
+            <div class="card">
+                <h3>Page Navigation</h3>
+                <p>Connect multiple web pages with simple navigation links.</p>
+            </div>
+        </div>
+
+        <div style="text-align:center;">
+            <a class="button" href="Contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 My Website | All Rights Reserved</p>
+    </div>
+</body>
+</html>
+```
